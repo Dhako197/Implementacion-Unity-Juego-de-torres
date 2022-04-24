@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Mm]emoryCaptures/
+/Juego De Torres/[Ll]ibrary/
+/Juego De Torres/[Tt]emp/
+/Juego De Torres/[Oo]bj/
+/Juego De Torres/[Bb]uild/
+/Juego De Torres/[Bb]uilds/
+/Juego De Torres/[Ll]ogs/
+/Juego De Torres/[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
