@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 77605ffb3011deb46803d3f85d8da4ef
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3432433942094752130
+    second: KnightRoll_strip_0
+  - first:
+      213: -1901502513949717595
+    second: KnightRoll_strip_2
+  - first:
+      213: 4750029554030113982
+    second: KnightRoll_strip_4
+  - first:
+      213: 4137076600032105557
+    second: KnightRoll_strip_5
+  - first:
+      213: -1264683247634009239
+    second: KnightRoll_strip_6
+  - first:
+      213: 1413729487323240081
+    second: KnightRoll_strip_7
+  - first:
+      213: -7129653897362523640
+    second: KnightRoll_strip_8
+  - first:
+      213: -7396429167802431551
+    second: KnightRoll_strip_9
+  - first:
+      213: 2142334050759028991
+    second: KnightRoll_strip_10
+  - first:
+      213: 2672419615045823096
+    second: KnightRoll_strip_11
+  - first:
+      213: -870392871960743624
+    second: KnightRoll_strip_12
+  - first:
+      213: -4692404591057253626
+    second: KnightRoll_strip_13
+  - first:
+      213: 7879138676081842425
+    second: KnightRoll_strip_14
+  - first:
+      213: 4803107656513942867
+    second: KnightRoll_strip_16
+  - first:
+      213: -5853557716279324501
+    second: KnightRoll_strip_18
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +86,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +120,348 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: KnightRoll_strip_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76d276f38b8d50d0800000000000000
+      internalID: -3432433942094752130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_2
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abc384c9818c95e0800000000000000
+      internalID: -1901502513949717595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_4
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4729076be7be140800000000000000
+      internalID: 4750029554030113982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_5
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5549e71af39d96930800000000000000
+      internalID: 4137076600032105557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_6
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963336f6941f27ee0800000000000000
+      internalID: -1264683247634009239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_7
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196956c7a739e9310800000000000000
+      internalID: 1413729487323240081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_8
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a3a3c0e816e0d90800000000000000
+      internalID: -7129653897362523640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_9
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c74cce1cda9a5990800000000000000
+      internalID: -7396429167802431551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_10
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff037b5f7791bbd10800000000000000
+      internalID: 2142334050759028991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_11
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87aa7951b77561520800000000000000
+      internalID: 2672419615045823096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_12
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8317fb36b4ebbe3f0800000000000000
+      internalID: -870392871960743624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_13
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bce97c2ea31eeb0800000000000000
+      internalID: -4692404591057253626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_14
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f856e361e2585d60800000000000000
+      internalID: 7879138676081842425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_16
+      rect:
+        serializedVersion: 2
+        x: 2455
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355f87437f018a240800000000000000
+      internalID: 4803107656513942867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightRoll_strip_18
+      rect:
+        serializedVersion: 2
+        x: 2636
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba09ce0454cf3cea0800000000000000
+      internalID: -5853557716279324501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
