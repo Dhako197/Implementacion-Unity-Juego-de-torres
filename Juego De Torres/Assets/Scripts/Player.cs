@@ -9,18 +9,20 @@ public class Player : MonoBehaviour
     public int Poder=5;
     //public Text poderText;
     public Text vidasText;
+    private TextMesh poderText;
    
     // Start is called before the first frame update
     void Start()
     {
         //poderText.text = Poder.ToString();
-       
+       poderText= this.GetComponentInChildren<TextMesh>();
     }
 
     // Update is called once per frame
     void Update()
     {
         vidasText.text = "Vidas: " + Vidas.ToString();
+        poderText.text = Poder.ToString();
         if (Vidas <= 0) Destroy(gameObject);
 
 
@@ -51,7 +53,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("AttackPoint"))
         {
             RestartPos();
-            Debug.Log("Hola puto");
+           
         }
     }
 
