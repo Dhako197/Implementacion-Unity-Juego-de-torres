@@ -8,18 +8,19 @@ public class Player : MonoBehaviour
     public int Vidas= 3;
     public int Poder=5;
     //public Text poderText;
-    //public Text vidasText;
+    public Text vidasText;
    
     // Start is called before the first frame update
     void Start()
     {
         //poderText.text = Poder.ToString();
-       // vidasText.text = Vidas.ToString();
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        vidasText.text = "Vidas: " + Vidas.ToString();
         if (Vidas <= 0) Destroy(gameObject);
 
 
