@@ -18,7 +18,7 @@ public class FloorController : MonoBehaviour
     {
         childrens = gameObject.GetComponentsInChildren<Transform>();
 
-        if (childrens.Length <= 1)
+        if (childrens.Length <= 2)
         {
            
             Invoke("DestroyFloor", 2.1f);
