@@ -41,13 +41,21 @@ public class Player : MonoBehaviour
             {
                 Poder += collision.gameObject.GetComponent<Enemy>().Poder;
                 collision.GetComponent<Enemy>().DestroyEnemy();
-                Invoke("RestartPos", 2f);
+                
             }
            
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("AttackPoint"))
+        {
+            RestartPos();
+            Debug.Log("Hola puto");
+        }
+    }
 
-    private void RestartPos()
+    public void RestartPos()
     {
         this.GetComponent<Draggable>().RestartPosition();
     }

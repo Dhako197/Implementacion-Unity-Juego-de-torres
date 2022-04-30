@@ -6,6 +6,7 @@ public class FloorController : MonoBehaviour
 {
 
     public Transform[] childrens;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +18,20 @@ public class FloorController : MonoBehaviour
     {
         childrens = gameObject.GetComponentsInChildren<Transform>();
 
-        if (childrens.Length <= 1) Invoke("DestroyFloor", 2.1f);
+        if (childrens.Length <= 1)
+        {
+           
+            Invoke("DestroyFloor", 2.1f);
+        }
     }
 
 
     private void DestroyFloor()
     {
-       gameObject.SetActive(false);
-    }
+
+        gameObject.SetActive(false);
+       
+    } 
+
+    
 }

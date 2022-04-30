@@ -19,6 +19,14 @@ public class Enemy : MonoBehaviour
         
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            this.transform.localPosition = collision.transform.localPosition;
+        }
+    }
+
     public void DestroyEnemy()
     {
         Destroy(gameObject);
