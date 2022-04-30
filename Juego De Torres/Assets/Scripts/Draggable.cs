@@ -40,4 +40,8 @@ public class Draggable : MonoBehaviour
         dragEndedCallBack(this);
        
     }
+    public void RestartPosition()
+    {
+        this.transform.localPosition = restartPos;
+    }
 }
