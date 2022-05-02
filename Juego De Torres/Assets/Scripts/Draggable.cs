@@ -16,20 +16,20 @@ public class Draggable : MonoBehaviour
     void Start()
     {
         
-        restartPos = this.transform.localPosition;
+        restartPos = this.transform.position;
     }
     private void OnMouseDown()
     {
         isDragged = true;
         startMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        startSpritePosition = transform.localPosition;
+        startSpritePosition = transform.position;
 
     }
     private void OnMouseDrag()
     {
         if (isDragged)
         {
-            transform.localPosition= startSpritePosition +(Camera.main.ScreenToWorldPoint(Input.mousePosition)- startMousePosition);
+            transform.position= startSpritePosition +(Camera.main.ScreenToWorldPoint(Input.mousePosition)- startMousePosition);
         }
 
 
@@ -42,6 +42,6 @@ public class Draggable : MonoBehaviour
     }
     public void RestartPosition()
     {
-        this.transform.localPosition = restartPos;
+        this.transform.position = restartPos;
     }
 }
