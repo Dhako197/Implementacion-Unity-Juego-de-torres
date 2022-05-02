@@ -16,13 +16,13 @@ Integrantes:
 
 Bugs:
 
--El nivel de torres no descienmde cuando se destruye un piso.
+-El nivel de torres no desciende a la hora de eliminar los enemigos si no que desaparece.
 
--demasiada sensibilidad.
+-Demasiada sensibilidad a la hora de mover el personaje principal.
 
 -Se puede arrastrar al jugador por todos los enemigos sin pasar por el anclaje.
 
--no hay patrones de diseño aplicados (por el momento).
+-No hay patrones de diseño aplicados (por el momento).
 
 
 Descarga del ejecutable:
