@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
-    public int Poder = 5;
+    [SerializeField]
+    private int poder = 5;
     
+    public int Poder { get => poder; }
+
+
     private TextMesh poderText;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +20,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        poderText.text = Poder.ToString();
+        poderText.text = poder.ToString();
     }
 
     private void OnTriggerExit2D(Collider2D collision)

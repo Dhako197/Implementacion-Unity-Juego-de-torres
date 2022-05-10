@@ -5,11 +5,16 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public int Vidas= 3;
-    public int Poder=5;
+    private int vidas = 3;
+    [SerializeField]
+    private int poder = 5;
     //public Text poderText;
     public Text vidasText;
     private TextMesh poderText;
+
+    
+
+
    
     // Start is called before the first frame update
     void Start()
@@ -18,12 +23,18 @@ public class Player : MonoBehaviour
        poderText= this.GetComponentInChildren<TextMesh>();
     }
 
+
     // Update is called once per frame
     void Update()
     {
-        vidasText.text = "Vidas: " + Vidas.ToString();
-        poderText.text = Poder.ToString();
-        if (Vidas <= 0) Destroy(gameObject);
+        vidasText.text = "Vidas: " + vidas.ToString();
+        poderText.text = poder.ToString();
+        if (vidas <= 0)
+        {
+            
+
+            Destroy(gameObject);
+        }
 
 
     }
@@ -33,15 +44,15 @@ public class Player : MonoBehaviour
         {
             int poderEnemigo = collision.gameObject.GetComponent<Enemy>().Poder;
 
-            if( poderEnemigo >= Poder)
+            if( poderEnemigo >= poder)
             {
-                Vidas--;
+                vidas--;
                 Draggable.isDragged = true;
                 Invoke("RestartPos", 2f);
             }
             else
             {
-                Poder += poderEnemigo;
+                poder += poderEnemigo;
                 collision.GetComponent<Enemy>().DestroyEnemy();
                 
             }
@@ -57,9 +68,21 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Support"))
+        {
+            int valorSupp = collision.gameObject.GetComponent<Support>().Valor;
+            poder += valorSupp;
+            Destroy(collision.gameObject);
+        }
+    }
+
+
     public void RestartPos()
     {
         this.GetComponent<Draggable>().RestartPosition();
+       
     }
 
    
