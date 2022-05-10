@@ -8,7 +8,7 @@ public class Draggable : MonoBehaviour
 
     public DragEndedDelegate dragEndedCallBack;
 
-    private bool isDragged = false;
+    public static bool isDragged = false;
     private Vector3 startMousePosition;
     private Vector3 startSpritePosition;
     public Vector3 restartPos;

@@ -27,21 +27,21 @@ public class Player : MonoBehaviour
 
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy")&& Draggable.isDragged== false)
         {
             int poderEnemigo = collision.gameObject.GetComponent<Enemy>().Poder;
 
             if( poderEnemigo >= Poder)
             {
                 Vidas--;
-
+                Draggable.isDragged = true;
                 Invoke("RestartPos", 2f);
             }
             else
             {
-                Poder += collision.gameObject.GetComponent<Enemy>().Poder;
+                Poder += poderEnemigo;
                 collision.GetComponent<Enemy>().DestroyEnemy();
                 
             }
