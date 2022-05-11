@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     public Text vidasText;
     private TextMesh poderText;
 
-    public int Vidas { get => vidas; set => vidas = value; }
+    public int Vidas { get => vidas; }
 
     private static Player instance;
     public static Player Instance { get => instance; }
