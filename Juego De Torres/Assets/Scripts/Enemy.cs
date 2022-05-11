@@ -6,9 +6,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField]
     private int poder = 5;
-    
     public int Poder { get => poder; }
-
 
     private TextMesh poderText;
     // Start is called before the first frame update
@@ -16,13 +14,12 @@ public class Enemy : MonoBehaviour
     {
         poderText = this.GetComponentInChildren<TextMesh>();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
         poderText.text = poder.ToString();
     }
-
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -30,7 +27,6 @@ public class Enemy : MonoBehaviour
             this.transform.localPosition = collision.transform.localPosition;
         }
     }
-
     public void DestroyEnemy()
     {
         Destroy(gameObject);

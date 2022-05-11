@@ -39,8 +39,7 @@ public class Player : MonoBehaviour
         //poderText.text = Poder.ToString();
        poderText= this.GetComponentInChildren<TextMesh>();
     }
-
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -50,9 +49,8 @@ public class Player : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-
-
     }
+    
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy")&& Draggable.isDragged== false)
@@ -64,6 +62,8 @@ public class Player : MonoBehaviour
                 vidas--;
                 Draggable.isDragged = true;
                 Invoke("RestartPos", 2f);
+                
+                
             }
             else
             {
@@ -82,7 +82,6 @@ public class Player : MonoBehaviour
            
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Support"))
@@ -92,12 +91,10 @@ public class Player : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-
-
+    
+    
     public void RestartPos()
     {
         this.GetComponent<Draggable>().RestartPosition();      
-    }
-
-   
+    } 
 }

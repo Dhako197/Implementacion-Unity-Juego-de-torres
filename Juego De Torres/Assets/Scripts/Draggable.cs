@@ -14,8 +14,7 @@ public class Draggable : MonoBehaviour
     public Vector3 restartPos;
 
     void Start()
-    {
-        
+    {       
         restartPos = this.transform.position;
     }
     private void OnMouseDown()
@@ -23,23 +22,22 @@ public class Draggable : MonoBehaviour
         isDragged = true;
         startMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         startSpritePosition = transform.position;
-
     }
+   
     private void OnMouseDrag()
     {
         if (isDragged)
         {
             transform.position= startSpritePosition +(Camera.main.ScreenToWorldPoint(Input.mousePosition)- startMousePosition);
         }
-
-
     }
+    
     private void OnMouseUp()
     {
         isDragged = false;
-        dragEndedCallBack(this);
-       
+        dragEndedCallBack(this);    
     }
+    
     public void RestartPosition()
     {
         this.transform.position = restartPos;

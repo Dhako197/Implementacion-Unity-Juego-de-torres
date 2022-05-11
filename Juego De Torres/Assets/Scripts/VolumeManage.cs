@@ -28,5 +28,13 @@ public class VolumeManage : MonoBehaviour
     private void Save()
     {
         PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+      
     }
+
+    public void MuteToggle()
+    {
+        AudioListener.volume = volumeSlider.value = 0;       
+        Save();
+    }
+   
 }
