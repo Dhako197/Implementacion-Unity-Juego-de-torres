@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class SnapController : MonoBehaviour
 {
-    public List<Transform> snapPoints;
+    [SerializeField]
+    private List<Transform> snapPoints;
     public List<Draggable> draggableObjects;
     public float snapRange = 0.5f;
+
+    public List<Transform> SnapPoints { get => snapPoints; }
 
 
 

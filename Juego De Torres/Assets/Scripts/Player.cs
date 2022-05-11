@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Player : MonoBehaviour
 {
+        
     private int vidas = 3;
     [SerializeField]
     private int poder = 5;
@@ -12,10 +14,25 @@ public class Player : MonoBehaviour
     public Text vidasText;
     private TextMesh poderText;
 
-    
+    public int Vidas { get => vidas; set => vidas = value; }
 
+    private static Player instance;
+    public static Player Instance { get => instance; }
 
-   
+    public event Action EnemyDestroy;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,9 +48,7 @@ public class Player : MonoBehaviour
         poderText.text = poder.ToString();
         if (vidas <= 0)
         {
-            
-
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
 
 
@@ -54,7 +69,7 @@ public class Player : MonoBehaviour
             {
                 poder += poderEnemigo;
                 collision.GetComponent<Enemy>().DestroyEnemy();
-                
+                EnemyDestroy?.Invoke();
             }
            
         }
@@ -81,8 +96,7 @@ public class Player : MonoBehaviour
 
     public void RestartPos()
     {
-        this.GetComponent<Draggable>().RestartPosition();
-       
+        this.GetComponent<Draggable>().RestartPosition();      
     }
 
    

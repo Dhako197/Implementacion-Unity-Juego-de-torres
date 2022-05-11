@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuPausa : MonoBehaviour
 {
@@ -46,4 +47,15 @@ public class MenuPausa : MonoBehaviour
         GameIsPaused = false;
         UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
     }
+
+    public void LoadNivel(string nivel)
+    {
+        SceneManager.LoadScene(nivel);
+    }
+
+    public void RestartLevel(string EsteNivel)
+    {
+        SceneManager.LoadScene(EsteNivel);
+    }
+
 }
